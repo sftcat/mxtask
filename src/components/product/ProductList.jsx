@@ -6,13 +6,12 @@ import ProductCard from "../product/ProductCard";
 import CartModal from "../cart-modal/CartModal";
 import Loading from "../loading/Loading";
 import Error from "../error/Error";
-import 
 
 
 // Продукталарни API 'дан юклашлик учун функция 
 async function fetchProducts() {
-  const response = await $apis(
-    "/spend-elon-musks-money/goodies.json" // API
+  const response = await fetch(
+    "https://eoussama.github.io/spend-elon-musks-money/goodies.json" // API
   );
   const data = await response.json();
 
